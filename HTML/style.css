@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', 'poppins', sans-serif;
+}
+
+body {
+  background:  #fff;
+}
+
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  padding: 30px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.7s;
+}
+
+header.rolagem {
+  background-color: #111111;
+  padding: 10px 4%;
+}
+
+header img {
+  font-size: 30px;
+  cursor: pointer;
+  color: #fcfcfc;
+  width: 90px;
+}
+
+header ul {
+  list-style: none;
+
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #f3f2f2;
+  font-size: 19px;
+  font-weight: 600;
+  transition: 0.3s;
+
+}
+
+.btn-contato button {
+  padding: 9px 20px;
+  background-color: #fdfcfc;
+  color: #0c0c0c;
+  border: 0;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.banner {
+  height: 80vh;
+  background-image: url(./img/volvo-fm-fmx-fh-5435371cde0e6.jpg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1 {
+  color: #f8f4f4;
+  font-size: 48px;
+  text-align: center;
+  width: 80%;
+}
+
+.banner h1 span {
+  color: #b0b842;
+}
+
+.container-icon {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flex-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main {
+  width: 100%;
+  padding: 30px 4%;
+
+}
+
+main ul {
+  list-style: none;
+  display: flex;
+
+}
+
+main ul li {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 0 20px;
+
+}
+
+main ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+
+}
+
+main ul li a span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0e0d0d;
+
+}
+
+.title{
+   width: 100%;
+   display: flex; 
+   justify-content: center;
+   padding: 0;
+   margin-bottom: 20px;
+   
+   div{
+    width: 100%;
+    max-width: 1400px;
+
+        h3{
+            font-size: 2.4rem;
+            font-weight: 600;
+     }
+   }
+}
+
+.container-cadss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    .wrapper-cardss{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 5%;
+        gap: 20px;
+        width: 100%;
+        max-width: 1400px;
+
+        .card{
+            flex-grow: 1;
+            border-radius: 0;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            .card-body{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+              .card-text{
+                  margin-bottom: 10px;
+               }
+            }
+        }
+    }
+}
+
+.btn.btn-primary {
+    border: none;
+    border-radius: 0;
+    background-color: #f20744;
+}
+
+
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),white);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),white);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;    
+    animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px; 
+}
+
+
+
+.interface{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: rgb(7, 7, 7);
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer .line-footer1{
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 40px;
+}
+
+.line-footer1 h2{
+    font-size: 2.5rem;
+}
+
+.line-footer1 p{
+    font-size: 1.2rem;
+    margin: 10px 0 20px 0;
+}
+
+.line-footer1 form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-footer1 form input[type=email]{
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    outline: 0;
+}
+
+.line-footer1 form input[type=submit]{
+    width: 80px;
+    height: 40px;
+    background-color: red;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.line-footer1 form input[type=submit]:hover{
+    background-color: #fff;
+    color: red;
+}
+
+footer .line-footer2{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+
+footer .line-footer2 .box-line-footer{
+    max-width: calc(100% / 5);
+} 
+
+footer .box-line-footer img{
+    max-width: 90px;
+    margin-bottom: 10px;
+}
+
+.line-footer2 .box-line-footer h3{
+    color: #f20744;
+    margin-bottom: 10px;
+}
+
+.line-footer2 .box-line-footer a{
+    color: #fff;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.box-line-footer .btn-redes a{
+    display: inline;
+}
+
+.box-line-footer .btn-redes button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .2s;
+}
+
+.box-line-footer .btn-redes button:hover{
+    background-color: #f20744;
+    border-color: #f20744;
+}
+footer .line-footer3{
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
